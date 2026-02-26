@@ -1,0 +1,63 @@
+body {
+    background-color:#FFF; /* bgc#fff */
+    color:#555; /* c#fff */
+    font-family:Arial, Helvetica, sans-serif; /* ffa */
+}
+
+header {
+    background-color:#002171; /* bgc#002171 */
+    color:#FFF; /* c#fff */
+    background-image:url(sunset.jpg); /* bgi */
+    line-height:400%; /* lh400% */
+    text-indent:1em; /* txi */
+    background-repeat:no-repeat; /* bgr */
+    background-position:right; /* bgdp */
+}
+
+nav {
+    background-color:#BBDEFB; /* bgc#bbdefb */
+    font-weight: bold; /* fwb */
+}
+nav a {
+    text-decoration:none; /* txd */
+}
+
+h1 {
+    margin-bottom:0px; /* mb0 */ 
+}
+
+h2 {
+    color:#1976D2; /* c#1976d2 */
+}
+
+h3 {
+    color: #003; /* c#003 */ 
+}
+
+h1,h2,h3 {
+    font-family:Georgia, 'Times New Roman', serif;
+}
+
+dt {
+    color:#002171; /* c#002171 */
+}
+
+address {
+    font-style: normal; /* fsnormal */
+}
+
+footer {
+    font-size:75%; /* fsz75% */
+    font-style:italic; /* fsi */
+    text-align:center; /* tac */
+    font-family:Georgia, 'Times New Roman', serif;
+}
+
+.resort {
+    color:#1976D2; /* c#1976D2 */
+}
+
+#content {
+    font-size:90%; /* fsz90% */
+}
+

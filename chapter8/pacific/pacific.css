@@ -1,0 +1,202 @@
+body {
+    background-color:#EAEAEA; /* bgc#eaeaea */
+    color:#555; /* c#555 */
+    font-family:Arial, Helvetica, sans-serif; /* ffa */
+    margin:0px;
+}
+
+header {
+    background-color:#002171; /* bgc#002171 */
+    color:#FFF; /* c#fff */
+    background-position:right; /* bgdp */
+    text-align:center; /* tac */
+
+}
+
+nav {
+    font-weight: bold; /* fwb */
+    padding: 0px; /* p1em */
+    font-size: 120%; /* fsz120% */
+    text-align: center; /* tac */
+}
+nav a {
+    text-decoration:none; /* txd */
+}
+
+h1 {
+    margin-bottom:0px; /* mb0 */
+    margin-top: 0px; /* mt0 */
+    letter-spacing: 0.25em; /* ls0.25em */
+    padding-top: 0.5em; /* pt0.5em */
+    padding-bottom: 0.5em; /* pb0.5em */
+}
+
+h2 {
+    color:#1976D2; /* c#1976d2 */
+    text-shadow: 1px 1px #ccc; /* txsh1px1px#ccc */
+}
+
+h3 {
+    color: #003; /* c#003 */ 
+}
+
+h1,h2,h3 {
+    font-family:Georgia, 'Times New Roman', serif;
+}
+
+dt {
+    color:#002171; /* c#002171 */
+}
+
+address {
+    font-style: normal; /* fsnormal */
+}
+
+footer {
+    font-size:75%; /* fsz75% */
+    font-style:italic; /* fsi */
+    text-align:center; /* tac */
+    font-family:Georgia, 'Times New Roman', serif;
+    padding: 2em; /* p2em */
+    background-color: #fff; /* bgc#fff */
+}
+
+main {
+    padding: 1px 20px 20px; /* p1px20px20px */
+    display: block; /* db */
+    background-color: #fff; /* bgc#fff */
+    padding-left: 30px;
+    overflow: auto; /* ov */
+
+}
+
+.resort {
+    color:#1976D2; /* c#1976D2 */
+}
+
+#content {
+    font-size:90%; /* fsz90% */
+}
+
+#wrapper {
+    background-color: #90C7E3; /* bgc#90C7E3 */
+    background: linear-gradient(to bottom,#FFF, #90C7E3);
+    background-attachment: fixed;
+}
+
+.hero {
+    background-image:url(coast2.jpg); /* bgi */
+}
+
+#yurthero {
+    background-image:url(yurt.jpg); /* bgi */
+}
+
+#trailhero {
+    background-image:url(trail.jpg); /* bgi */
+}
+
+.hero, #yurthero, #trailhero {
+    height: 18.75rem; /* h18.75rem */
+    background-size: 100% 100%; /* bgz100%100% */
+    background-repeat: no-repeat;
+}  
+
+* {
+    box-sizing: border-box; /* bxb */
+}
+
+nav ul {
+    padding-left: 0px; /* pl0px */
+    margin: 0px; /* m0px */
+    font-size: 1.2em; /* fsz1.2em */
+    list-style-type: none; /* lstt none */
+}
+
+header a {
+    color: #fff; /* c#fff */
+    text-decoration: none; /* txd */
+
+}
+
+a:link, a:visited {
+    color: #5C7FA3; /* c#1976D2 */
+    text-decoration: none; /* txd */
+}
+
+nav li {
+    border-bottom: 1px solid #002171; /* bdb1pxsol#002171 */
+
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: flex; /* dflex */
+        justify-content: space-around; /* jcspace-around */
+    }
+    nav li {
+        border-bottom: none; /* bdbnone */
+    }
+    section {
+        margin-left: 2em; /* ml2em */
+        margin-right: 2em; /* mr2em */
+    }
+
+    .flow {
+        display:flex; /* dflex */
+        flex-direction: row; /* fdrow */
+        flex:1;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    #wrapper {
+        width:80%;
+        margin: 0 auto; /* ma */
+        border: 1px solid #002171;
+        box-shadow: 3px 3px #002171; ;
+    }
+
+    nav {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    @supports (display: grid) {
+        nav ul {
+            flex-direction: column;
+            padding-top: 1em;
+        }
+
+        #wrapper {
+            display:grid;
+            grid-template-columns: 180px 1fr;
+            grid-template-areas:
+                "header header"
+                "nav hero"
+                "nav main"
+                "nav footer";
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        .hero {
+            grid-area: hero;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    }
+}
